@@ -13,11 +13,7 @@ console.log(locationInput)
 
   // Handle Weather Information
   // Fetch Open Weather Map API
-<<<<<<< HEAD
-var requestWeatherUrl = 'https://api.openweathermap.org/data/2.5/forecast?zip='+ locationInput + '&units=imperial&appid=f47cf665982ed682ac53eda751512847'
-=======
 var requestWeatherUrl = 'https://api.openweathermap.org/data/2.5/weather?zip=' + locationInput + '&units=imperial&appid=f47cf665982ed682ac53eda751512847'
->>>>>>> ba48adfd494c23bc4adde32a0672b3743da9ae3c
 
 function getApi(requestWeatherUrl) {
     fetch(requestWeatherUrl)
@@ -78,73 +74,6 @@ function getApi(requestWeatherUrl) {
             .then(function (data) {
               console.log(data);
 
-<<<<<<< HEAD
-              // Case Density
-              var caseDensity = (data.metrics.caseDensity).toFixed(2);
-              caseDensityP = document.createElement('p');
-              var caseDensityEl = document.querySelector("#covid-div");
-              caseDensityEl.append(caseDensityP);
-              caseDensityP.textContent = ("Cases per 100,000 People: " + caseDensity); 
-
-              // Infection Rate
-              var infectionRate = (data.metrics.infectionRate).toFixed(2);
-              infectionRateP = document.createElement('p');
-              var InfectionRateEl = document.querySelector("#covid-div");
-              InfectionRateEl.append(infectionRateP);
-              infectionRateP.textContent = ("Infections per Typical Case: " + infectionRate);    
-
-              // ICU Headroom
-              var newCases = data.metrics.icuHeadroomDetails.currentIcuCovid;
-              console.log(newCases);
-              newCasesP = document.createElement('p');
-              var newCasesEl = document.querySelector("#covid-div");
-              newCasesEl.append(newCasesP);
-              newCasesP.textContent = ("ICU Headroom Used: " + newCases + "%");    
-
-              // Recommendation Logic
-              var count = 0;
-              // Elements Check (e.g. is it raining or snowing?)
-              // Temperature Check
-              if (temp >= 80) {
-                count = count + 1
-
-              } else if (temp >= 65) {
-                count = count + 2
-              } else
-                count = count + 3
-              // Case Density Check
-              if (newCases >= 10) {
-                count = count + 3
-              } else if (newCases >= 1) {
-                count = count + 2
-              } else 
-                count = count + 1
-
-              // Infection Rate Check
-              if (infectionRate >= 1.1) {
-                count = count + 3
-              } else if (infectionRate >= 0.9) {
-                count = count + 2
-              } else {
-                count = count + 1
-              }
-              // ICU Headroom
-              if (newCases >= 60) {
-                count = count + 3
-              } else if (newCases >= 50) {
-                count = count + 2
-              } else 
-                count = count + 1
-                
-              // Results
-              if (count >= 9) {
-                document.getElementById("answer-div").innerHTML = "Stay on the Couch";
-              }  else if (count > 6) {
-                document.getElementById("answer-div").innerHTML = "either way";
-              } else {
-                document.getElementById("danswer-div").innerHTML = "put on your pants";
-              }
-=======
               console.log(data[0]);
               console.log(data[0].zipcodes);
               // var fips = data[0].zipcodes[0].county_fips;
@@ -159,7 +88,6 @@ function getApi(requestWeatherUrl) {
     getApi(requestWeatherUrl);
     
     });
->>>>>>> ba48adfd494c23bc4adde32a0672b3743da9ae3c
 
 
     
