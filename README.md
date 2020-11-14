@@ -1,6 +1,6 @@
 # Couch or COVID | Project 1 - Team Reality-Bytes
 
-"A Data Driven App for Navigating Lockdown with COVID. "
+"A Data Driven App for Navigating the Elements of 2020."
 
 ## Concept
 
@@ -18,8 +18,8 @@ This applications gives users a quick glance at the Weather and Covid-19 stats f
 
 - SCRUM Master - Mike
 - HTML/Layout - All
-- Styling - Cham/ Mike
-- Challenges lended to group coding Javascript - All
+- Styling - Cham then Mike/All
+- Javascript - All with Liz acting as lead for QA
 
 ## Challenges
 
@@ -36,3 +36,11 @@ We ran into timing issues as the COVID API took 1-2s to run, causing the functio
 [REPO](https://github.com/MikeFogz/API-Project1)
 
 [Deployed](https://mikefogz.github.io/API-Project1/)
+
+## screenshots:
+
+![DeployedPageDemo](./Assets/result-screenshot.png)
+
+![htmlscreenshot](./Assets/html-screenshot.png)
+
+![javascriptscreenshot](./Assets/js-screenshot.png)
